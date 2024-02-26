@@ -1,3 +1,7 @@
+<p align="center" style="background-color: #ffffff; border-radius: 10px; padding: 20px">
+  <img width="300" src="https://roadsdata.it/wp-content/uploads/2023/06/Logo-roadsdata.svg" alt="RoadsData Logo">
+</p>
+
 # Flutter SDK Integration Examples
 
 ## Introduction
