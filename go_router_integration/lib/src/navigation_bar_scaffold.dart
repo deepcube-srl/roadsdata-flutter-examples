@@ -43,7 +43,7 @@ class NavigationBarScaffold extends StatelessWidget {
           NavigationDestination(
             selectedIcon: Icon(Icons.thumb_up),
             icon: Icon(Icons.thumb_up_outlined),
-            label: 'JSON',
+            label: 'Native',
           ),
           NavigationDestination(
             selectedIcon: Icon(Icons.upcoming),

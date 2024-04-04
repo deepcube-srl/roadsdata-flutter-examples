@@ -13,7 +13,7 @@ final _shellNavigatorAKey =
 final _shellNavigatorBKey =
     GlobalKey<NavigatorState>(debugLabel: 'shellPromobox');
 final _shellNavigatorCKey = GlobalKey<NavigatorState>(debugLabel: 'shellHTML');
-final _shellNavigatorDKey = GlobalKey<NavigatorState>(debugLabel: 'shellJson');
+final _shellNavigatorDKey = GlobalKey<NavigatorState>(debugLabel: 'shellNative');
 final _shellNavigatorEKey = GlobalKey<NavigatorState>(debugLabel: 'shellPopup');
 
 final goRouter = GoRouter(

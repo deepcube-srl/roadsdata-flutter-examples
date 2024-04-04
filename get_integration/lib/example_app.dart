@@ -7,7 +7,6 @@ import 'package:get/get.dart';
 
 import 'package:uni_links/uni_links.dart';
 
-import 'package:flutter_roadsdata_get_example/screens/bottom_navigation.dart';
 import 'package:flutter_roadsdata_get_example/screens/banner_screen.dart';
 import 'package:flutter_roadsdata_get_example/screens/html_screen.dart';
 import 'package:flutter_roadsdata_get_example/screens/native_screen.dart';
@@ -38,7 +37,18 @@ class _FlutterRoadsdataExampleAppState
       debugPrint(
           'now we should navigate with a getx based implementation to: $uriString');
       final Uri uri = Uri.parse(uriString);
-      Get.toNamed(uri.path);
+      Get.toNamed('/${uri.path != '' ? uri.path :uri.host}', preventDuplicates:false);
+    };
+
+    FlutterRoadsdata.instance!.extraActionsHandler = (String type, Map<String, dynamic> payload) {
+      debugPrint("Will track a $type with the following data: $payload");
+      //if(type == 'piwik-event') {
+        // await FlutterPiwikPro.sharedInstance.trackCustomEvent(
+        //  action: payload['eventAction'],
+        //  category: payload['eventCategory'],
+        //  name: payload['eventName'],
+        // );
+      //}
     };
   }
 
@@ -82,7 +92,7 @@ class _FlutterRoadsdataExampleAppState
         String? testCode = uri.queryParameters['rd_test_uuid'];
         adService.fetchTestAd(testCode!);
 
-        Get.toNamed(uri.path);
+        Get.toNamed(uri.path, preventDuplicates:false);
       }
     }, onError: (err) {
       // Handle exception by warning the user their action did not succeed
@@ -106,7 +116,7 @@ class _FlutterRoadsdataExampleAppState
       ),
       // home: BottomNavigation(),
       // uncomment `home` and comment the lines below to try out a sample bottom navigation based integration
-      initialRoute: '/banner',
+      initialRoute: '/popup',
       getPages: [
         GetPage(name: '/banner', page: () => const BannerScreen()),
         GetPage(name: '/promobox', page: () => const PromoboxScreen()),

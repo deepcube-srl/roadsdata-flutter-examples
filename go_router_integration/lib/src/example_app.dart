@@ -56,7 +56,7 @@ class _FlutterRoadsdataExampleAppState
       } on PlatformException {
         // Platform messages may fail but we ignore the exception
         print('failed to get initial uri');
-      } on FormatException catch (err) {
+      } on FormatException {
         if (!mounted) return;
         print('malformed initial uri');
       }

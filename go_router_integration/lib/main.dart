@@ -6,7 +6,7 @@ void main() {
   FlutterRoadsdata.init(
     host: 'YOUR_HOST',
     clientId: 'YOUR_CLIENT_ID',
-    accessToken: 'YOUR_ACCESS:TOKEN',
+    accessToken: 'YOUR_ACCESS_TOKEN',
   );
   runApp(const MyApp());
 }

@@ -22,14 +22,12 @@ class _NativeScreenState extends State<NativeScreen> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   AdView.withBuilder(
-                      containerId: '65cf64a6319444d74300c0f3',
+                      containerId: '65e83739a96af053c5010637',
                       builder: (BuildContext buildContext,
                           Map<String, dynamic> jsonData) {
                         return Column(children: [
-                          ClipOval(
-                            child: Image.network(jsonData['image']),
-                          ),
-                          Text(jsonData['text'])
+                          //ClipOval(child: Image.network(jsonData['image'])),
+                          Text("Hello ${jsonData['hello']}!")
                         ]);
                       }),
                 ],

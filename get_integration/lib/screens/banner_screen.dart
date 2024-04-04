@@ -11,21 +11,26 @@ class BannerScreen extends StatefulWidget {
 class _BannerScreenState extends State<BannerScreen> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-        color: const Color.fromARGB(255, 190, 243, 217),
-        alignment: Alignment.center,
-        padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
-        child: const SafeArea(
-          child: Center(
-            child: SingleChildScrollView(
-              child: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
-                  AdView(containerId: '65d76413d498a3cb99000899'),
-                ],
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Banner screen'),
+      ),
+      body: Container(
+          color: const Color.fromARGB(255, 190, 243, 217),
+          alignment: Alignment.center,
+          padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
+          child: const SafeArea(
+            child: Center(
+              child: SingleChildScrollView(
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    AdView(containerId: '65d76413d498a3cb99000899'),
+                  ],
+                ),
               ),
             ),
-          ),
-        ));
+          )),
+    );
   }
 }

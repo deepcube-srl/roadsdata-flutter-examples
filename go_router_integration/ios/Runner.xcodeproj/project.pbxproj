@@ -481,14 +481,14 @@
 				DEVELOPMENT_TEAM = Z8XVQKAL24;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "RoadsData Demo";
+				INFOPLIST_KEY_CFBundleDisplayName = "RoadsData Demo (go_router)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.deepcube.tech.roadsdatademo-flutter";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.deepcube.tech.roadsdatademo-flutter-go-router";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -650,14 +650,14 @@
 				DEVELOPMENT_TEAM = Z8XVQKAL24;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "RoadsData Demo";
+				INFOPLIST_KEY_CFBundleDisplayName = "RoadsData Demo (go_router)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.deepcube.tech.roadsdatademo-flutter";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.deepcube.tech.roadsdatademo-flutter-go-router";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -672,14 +672,14 @@
 				DEVELOPMENT_TEAM = Z8XVQKAL24;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = Runner/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "RoadsData Demo";
+				INFOPLIST_KEY_CFBundleDisplayName = "RoadsData Demo (go_router)";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.reference";
 				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "eu.deepcube.tech.roadsdatademo-flutter";
+				PRODUCT_BUNDLE_IDENTIFIER = "eu.deepcube.tech.roadsdatademo-flutter-go-router";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				VERSIONING_SYSTEM = "apple-generic";
 			};

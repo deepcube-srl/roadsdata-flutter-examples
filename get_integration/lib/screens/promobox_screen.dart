@@ -6,16 +6,20 @@ class PromoboxScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-      child: Container(
-        color: const Color.fromARGB(255, 237, 195, 244),
-        alignment: Alignment.center,
-        padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
-        child: const SingleChildScrollView(
-          child: Column(children: [
-            AdView(containerId: '653f76480f3864f0a008ebaa'),
-            AdView(containerId: '653a30fe786638fcd70cb24e'),
-          ]),
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Promobox screen'),
+      ),
+      body: SafeArea(
+        child: Container(
+          color: const Color.fromARGB(255, 237, 195, 244),
+          alignment: Alignment.center,
+          padding: const EdgeInsets.symmetric(vertical: 0, horizontal: 16),
+          child: const SingleChildScrollView(
+            child: Column(children: [
+              AdView(containerId: '65e8776dff23ca60780344a4')
+            ]),
+          ),
         ),
       ),
     );
